@@ -12,8 +12,6 @@ def jogar():
         chute = input("Qual letra? ")
         print("jogando...")
 
-
-
     print("Fim do jogo")
 
 if(__name__ == "__main__"):
