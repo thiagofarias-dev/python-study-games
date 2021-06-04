@@ -8,7 +8,7 @@ def jogar():
     print(letras_acertadas)
 
     erros = 0
-
+    tentativas = 7
     while(True):
 
         chute = pede_chute()
@@ -18,10 +18,10 @@ def jogar():
         else:
             erros += 1
             desenha_forca(erros)
-            if ((7 - erros) > 0):
-                print("Ops, você errou! Faltam {} tentativas.".format(7 - erros))
+            if ((tentativas - erros) > 0):
+                print("Ops, você errou! Faltam {} tentativas.".format(tentativas - erros))
 
-        if (erros == 7):
+        if (erros == tentativas):
             break
         if ("_" not in letras_acertadas):
             break
